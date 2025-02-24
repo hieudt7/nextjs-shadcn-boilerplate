@@ -1,8 +1,4 @@
-# Boilerplate and Starter for Next.js 15+, Tailwind CSS 3.4, and TypeScript.
-| Sign Up | Sign In |
-| --- | --- |
-| [![Next.js Boilerplate SaaS Sign Up](public/assets/images/nextjs-boilerplate-sign-in.png)](https://demo.nextjs-boilerplate.com/sign-up) | [![Next.js Boilerplate SaaS Sign In](public/assets/images/nextjs-boilerplate-sign-in.png)](https://demo.nextjs-boilerplate.com/sign-in) |
-
+# Boilerplate and Starter for Next.js 15+, Tailwind CSS 3.4, TypeScript and Shadcn.
 ### Features
 
 Developer experience first, extremely flexible code structure and only keep what you need:
@@ -10,10 +6,8 @@ Developer experience first, extremely flexible code structure and only keep what
 - ⚡ [Next.js](https://nextjs.org) with App Router support
 - 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
 - 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
+- 🖥️ Use [Shadcn] UI library (https://ui.shadcn.com/)
 - ✅ Strict Mode for TypeScript and React 19
-- 🔒 Authentication with [Clerk](https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate): Sign up, Sign in, Sign out, Forgot password, Reset password, and more.
-- 👤 Passwordless Authentication with Magic Links, Multi-Factor Auth (MFA), Social Auth (Google, Facebook, Twitter, GitHub, Apple, and more), Passwordless login with Passkeys, User Impersonation
-- 📦 Type-safe ORM with DrizzleORM, compatible with PostgreSQL, SQLite, and MySQL
 - 🌐 Multi-language (i18n) with [next-intl](https://next-intl-docs.vercel.app/) and [Crowdin](https://l.crowdin.com/next-js)
 - ♻️ Type-safe environment variables with T3 Env
 - ⌨️ Form handling with React Hook Form
@@ -28,10 +22,7 @@ Developer experience first, extremely flexible code structure and only keep what
 - 🧪 Integration and E2E Testing with Playwright
 - 👷 Run tests on pull request with GitHub Actions
 - 🎉 Storybook for UI development
-- 🚨 Error Monitoring with [Sentry](https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo)
 - ☂️ Code coverage with [Codecov](https://about.codecov.io/codecov-free-trial/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo)
-- 🖥️ Monitoring as Code with [Checkly](https://www.checklyhq.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=next-js-boilerplate)
-- 🎁 Automatic changelog generation with Semantic Release
 - 🔍 Visual testing with Percy (Optional)
 - 💡 Absolute Imports using `@` prefix
 - 🗂 VSCode configuration: Debug, Settings, Tasks and Extensions
@@ -47,7 +38,7 @@ Built-in feature from Next.js:
 
 ### Requirements
 
-- Node.js 20+ and npm
+- Node.js 18+ and npm
 
 ### Getting started
 
@@ -67,17 +58,6 @@ npm run dev
 
 Open http://localhost:3000 with your favorite browser to see your project.
 
-### Set up authentication
-
-To get started, you will need to create a Clerk account at [Clerk.com](https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate) and create a new application in the Clerk Dashboard. Once you have done that, copy the `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` values and add them to the `.env.local` file (not tracked by Git):
-
-```shell
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_pub_key
-CLERK_SECRET_KEY=your_clerk_secret_key
-```
-
-Now you have a fully functional authentication system with Next.js, including features such as sign up, sign in, sign out, forgot password, reset password, update profile, update password, update email, delete account, and more.
-
 ### Translation (i18n) setup
 
 For translation, the project uses `next-intl` combined with [Crowdin](https://l.crowdin.com/next-js). As a developer, you only need to take care of the English (or another default language) version. Translations for other languages are automatically generated and handled by Crowdin. You can use Crowdin to collaborate with your translation team or translate the messages yourself with the help of machine translation.
@@ -91,7 +71,6 @@ After defining the environment variables in your GitHub Actions, your localizati
 ```shell
 .
 ├── README.md                       # README file
-├── .github                         # GitHub folder
 ├── .husky                          # Husky configuration
 ├── .storybook                      # Storybook folder
 ├── .vscode                         # VSCode configuration
@@ -99,7 +78,6 @@ After defining the environment variables in your GitHub Actions, your localizati
 ├── src
 │   ├── app                         # Next JS App (App Router)
 │   ├── components                  # React components
-│   ├── graphql                     # Graphql folder to store mutation, query and apollo sever client
 │   ├── hooks                       # Custom hooks folder
 │   ├── libs                        # 3rd party libraries configuration
 │   ├── locales                     # Locales folder (i18n messages)
