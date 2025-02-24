@@ -22,8 +22,6 @@ export default async function SignUpPage(props: ISignUpPageProps) {
   setRequestLocale(locale);
 
   return (
-    <div>
-      <h4>Signup Page</h4>
-    </div>
+    <h5>Signup page</h5>
   );
 };

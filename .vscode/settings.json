@@ -50,6 +50,7 @@
     "toml",
     "xml",
     "gql",
+    "graphql",
     "astro",
     "css",
     "less",

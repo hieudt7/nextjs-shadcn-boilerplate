@@ -22,7 +22,7 @@ export default async function UserProfilePage(props: IUserProfilePageProps) {
 
   return (
     <div className="my-6 -ml-16">
-      <p>User page</p>
+      <h4>User Profile</h4>
     </div>
   );
 };
