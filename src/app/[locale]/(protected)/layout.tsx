@@ -49,7 +49,6 @@ export default async function RootLayout(props: {
   // Using internationalization in Client Components
   const messages = await getMessages();
 
-  // The `suppressHydrationWarning` attribute in <body> is used to prevent hydration errors caused by Sentry Overlay,
   // which dynamically adds a `style` attribute to the body tag.
 
   return (

@@ -1,6 +1,6 @@
 import withBundleAnalyzer from '@next/bundle-analyzer';
-import { withSentryConfig } from '@sentry/nextjs';
 import createNextIntlPlugin from 'next-intl/plugin';
+import { PHASE_DEVELOPMENT_SERVER } from 'next/constants';
 import './src/libs/Env';
 
 const withNextIntl = createNextIntlPlugin('./src/libs/i18n.ts');
@@ -10,15 +10,19 @@ const bundleAnalyzer = withBundleAnalyzer({
 });
 
 /** @type {import('next').NextConfig} */
-export default withSentryConfig(
-  bundleAnalyzer(
+export default (phase: string) => {
+  const isDev = phase === PHASE_DEVELOPMENT_SERVER;
+  return bundleAnalyzer(
     withNextIntl({
       eslint: {
         dirs: ['.'],
       },
       poweredByHeader: false,
       reactStrictMode: true,
-      serverExternalPackages: ['@electric-sql/pglite'],
+      images: {
+        unoptimized: true,
+      },
+      assetPrefix: isDev ? undefined : 'https://cdn.mydomain.com',
     }),
-  ),
-);
+  );
+};
