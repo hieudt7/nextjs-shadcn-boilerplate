@@ -1,4 +1,6 @@
 'use client';
+import { SelectScrollable } from '@/components/common';
+import { Button } from '@/components/ui/button';
 import { useCountStore } from '@/stores/home';
 import usePersistStore from '@/utils/usePersistStore';
 
@@ -15,12 +17,13 @@ const HomePage = () => {
       <span>{store?.count}</span>
 
       <div className="flex gap-2">
-        <button onClick={store?.increase} type="button" className="rounded-md border border-white p-1.5 font-medium">
+        <Button onClick={store?.increase} type="button">
           Increase
-        </button>
-        <button onClick={store?.decrease} type="button" className="rounded-md border border-white p-1.5 font-medium">
+        </Button>
+        <Button onClick={store?.decrease} type="button">
           Decrease
-        </button>
+        </Button>
+        <SelectScrollable />
       </div>
     </>
   );
