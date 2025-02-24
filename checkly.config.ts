@@ -20,7 +20,6 @@ export const config = defineConfig({
   // FIXME: Add your own project name, logical ID, and repository URL
   projectName: 'Next.js Boilerplate',
   logicalId: 'nextjs-boilerplate',
-  repoUrl: 'https://github.com/ixartz/Next-js-Boilerplate',
   checks: {
     locations: ['us-east-1', 'eu-west-1'],
     tags: ['website'],

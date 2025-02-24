@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: 'apple-touch-icon',
-      url: '/ict-logo.png',
+      url: '/app-logo.svg',
     },
     {
       rel: 'icon',

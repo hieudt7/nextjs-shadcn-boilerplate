@@ -1,1 +1,0 @@
-# Graphql mutation related folder

@@ -119,7 +119,7 @@ After defining the environment variables in your GitHub Actions, your localizati
 
 ### Customization
 
-- `public/ict-logo.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your website favicon
+- `public/app-logo.svg`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your website favicon
 - `src/utils/AppConfig.ts`: configuration file
 - `src/templates/BaseTemplate.tsx`: default theme
 - `next.config.mjs`: Next.js configuration

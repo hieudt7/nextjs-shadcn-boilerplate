@@ -1,7 +1,5 @@
 {
-  "name": "next-js-boilerplate",
-  "version": "3.60.5",
-  "author": "Ixartz (https://github.com/ixartz)",
+  "name": "next-js-shadcn-boilerplate",
   "scripts": {
     "dev:next": "next dev",
     "dev": "run-p dev:*",
@@ -23,13 +21,9 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@apollo/client": "^3.12.7",
-    "@apollo/experimental-nextjs-app-support": "^0.11.7",
     "@hookform/resolvers": "^3.9.1",
     "@sentry/nextjs": "^9.1.0",
     "@t3-oss/env-nextjs": "^0.11.1",
-    "apollo-upload-client": "^18.0.1",
-    "graphql": "^16.10.0",
     "next": "^15.1.0",
     "next-intl": "^3.26.0",
     "react": "19.0.0",

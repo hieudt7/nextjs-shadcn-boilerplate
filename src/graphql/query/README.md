@@ -1,1 +1,0 @@
-# Graphql query related folder
